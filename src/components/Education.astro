@@ -1,0 +1,71 @@
+<section id="estudios" class="education">
+  <h2>ESTUDIOS & TRAYECTORIA</h2>
+  <div class="timeline">
+    <div class="item">
+      <span class="year">2024 - Presente</span>
+      <h3>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
+      <p class="place">Colegio Sta. Joaquina de Vedruna (Sevilla)</p>
+      <p>Formación en desarrollo frontend, backend, gestión de bases de datos y creación de aplicaciones web interactivas.</p>
+    </div>
+    <div class="item">
+      <span class="year">Formación Previa</span>
+      <h3>Bachillerato / Educación Secundaria</h3>
+      <p>Bases académicas sólidas orientadas al aprendizaje técnico y la resolución de problemas.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .education {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-left: 2px solid var(--accent-gold);
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+  }
+  .item {
+    position: relative;
+  }
+  .item::before {
+    content: '';
+    position: absolute;
+    left: -1.95rem;
+    top: 0.3rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-gold);
+  }
+  .year {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+  }
+  .place {
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+</style>

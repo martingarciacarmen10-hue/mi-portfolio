@@ -1,0 +1,171 @@
+<section id="inicio" class="hero">
+  <div class="top-spacer-line"></div>
+
+  <div class="hero-grid">
+    <div class="photo-column">
+      <img src="/images/foto-carmen.png" alt="Carmen Martín" class="hero-photo" />
+    </div>
+
+    <div class="text-column">
+      <div class="star-divider">
+        <span class="star">*</span>
+        <div class="line"></div>
+      </div>
+
+      <span class="subhead">CURRICULUM WEB</span>
+      
+      <h1 class="title-serif">HOLA, SOY</h1>
+      <h2 class="name-script">Carmen Martín</h2>
+
+      <p class="description">
+        Estudiante de Grado Superior DAW en Col. Sta Joaquina de Vedruna (Sevilla). Persona trabajadora, resolutiva, con iniciativa y de rápida adaptación a diferentes situaciones.
+      </p>
+
+      <a href="#contacto" class="btn-contact">→ CONTACTAR</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-color);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .top-spacer-line {
+    width: 100%;
+    height: 16px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-main);
+    flex-shrink: 0;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .photo-column {
+    border-right: 1px solid var(--border-color);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+  }
+
+  .text-column {
+    padding: clamp(1rem, 2.5vh, 2rem) clamp(1.5rem, 3vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-main);
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .star-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-bottom: clamp(0.4rem, 1.2vh, 0.8rem);
+  }
+
+  .star-divider .star {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    line-height: 1;
+    margin-bottom: 0.2rem;
+    font-family: var(--font-sans);
+  }
+
+  .star-divider .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+  }
+
+  .subhead {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-bottom: clamp(0.3rem, 1vh, 0.6rem);
+    color: var(--text-dark);
+  }
+
+  .title-serif {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .name-script {
+    font-family: var(--font-handwriting, 'Alex Brush', cursive);
+    font-size: clamp(3rem, 4.8vw, 4.6rem);
+    font-weight: 400;
+    line-height: 1;
+    margin-top: -0.2rem;
+    margin-bottom: clamp(0.6rem, 1.8vh, 1.2rem);
+    color: var(--text-dark);
+  }
+
+  .description {
+    font-family: var(--font-sans);
+    font-size: clamp(0.8rem, 1vw, 0.95rem);
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 400px;
+    margin-bottom: clamp(0.8rem, 2vh, 1.5rem);
+    color: #1a1613;
+  }
+
+  /* Botón con dimensiones amplias según especificación de Figma */
+  .btn-contact {
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    padding: clamp(0.8rem, 1.4vh, 1.05rem) clamp(3rem, 4vw, 4.2rem);
+    color: var(--text-dark);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: clamp(0.88rem, 1.05vw, 0.98rem);
+    font-weight: 400;
+    letter-spacing: 3.5px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      height: auto;
+      overflow: visible;
+    }
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+    .photo-column {
+      border-right: none;
+      border-bottom: 1px solid var(--border-color);
+      height: 380px;
+    }
+  }
+</style>

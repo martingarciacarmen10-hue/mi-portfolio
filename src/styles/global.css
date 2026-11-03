@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Pinyon+Script&display=swap');
+
+:root {
+  --bg-main: #fcf9f2;
+  --border-color: #1a1613;
+  --text-dark: #1a1613;
+  --accent-gold: #caa063;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Bodoni Moda', serif;
+  --font-script: 'Pinyon Script', cursive;
+  --font-handwriting: 'Alex Brush', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+}
+
+body {
+  overflow-x: hidden;
+  padding-top: 75px;
+}

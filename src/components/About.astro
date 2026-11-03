@@ -1,0 +1,209 @@
+<section id="sobre-mi" class="about">
+  <div class="section-top-bar"></div>
+
+  <div class="about-grid">
+    <!-- 1. Arriba Izquierda: Tarjeta Código -->
+    <div class="grid-box img-box border-bottom">
+      <img src="/images/tarjeta-codigo.png" alt="Código" />
+    </div>
+
+    <!-- 2. Arriba Derecha: Conocimientos Técnicos (Icono a la Izquierda) -->
+    <div class="grid-box card-box border-bottom">
+      <div class="tab">CONOCIMIENTOS TÉCNICOS —</div>
+      <div class="card-body">
+        <div class="icon-box-left">
+          <img src="/images/icono-tecnico.png" alt="Conocimientos Técnicos" class="icon-tecnico-img" />
+        </div>
+
+        <h3>CONOCIMIENTOS TÉCNICOS</h3>
+        <p class="subtitle-script">Lenguajes y herramientas digitales</p>
+        <p class="text">
+          Java (Básico), MySQL (Básico), Canva (Medio) y Microsoft Word (Básico).
+        </p>
+      </div>
+    </div>
+
+    <!-- 3. Abajo Izquierda: Habilidades e Idiomas (Icono a la Izquierda) -->
+    <div class="grid-box card-box">
+      <div class="card-body">
+        <div class="icon-box-left">
+          <img src="/images/icono-habilidades.png" alt="Habilidades e Idiomas" class="icon-habilidades-img" />
+        </div>
+
+        <h3>HABILIDADES & IDIOMAS</h3>
+        <p class="subtitle-script">Aptitudes personales y datos adicionales</p>
+        <p class="text">
+          Habilidades: Trabajo en equipo, responsable, proactiva, comunicación efectiva.<br />
+          Idiomas: Castellano (Nativo) e Inglés (Medio).
+        </p>
+      </div>
+      <div class="tab">HABILIDADES & IDIOMAS —</div>
+    </div>
+
+    <!-- 4. Abajo Derecha: Tarjeta Ilustración -->
+    <div class="grid-box img-box">
+      <img src="/images/tarjeta-ilustracion.png" alt="Ilustración" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-color);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .section-top-bar {
+    height: 16px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-main);
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .grid-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 0;
+  }
+
+  /* Solo separación horizontal entre filas */
+  .border-bottom {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-box {
+    background-color: var(--bg-main);
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .tab {
+    background-color: #f3e8e2;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 0.8rem 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    border: none;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .card-body {
+    flex: 1;
+    padding: clamp(0.4rem, 1.2vh, 1.2rem) clamp(1rem, 2vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  /* Ambos iconos alineados a la izquierda dentro del bloque de texto */
+  .icon-box-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto clamp(0.3rem, 1vh, 0.6rem) auto;
+  }
+
+  .icon-tecnico-img {
+    height: clamp(65px, 8.5vh, 90px);
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .icon-habilidades-img {
+    height: clamp(65px, 8.5vh, 90px);
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  h3 {
+    font-family: var(--font-sans);
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #000000;
+    margin: 0 auto 0.1rem auto;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
+
+  .subtitle-script {
+    font-family: var(--font-handwriting);
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 400;
+    margin: 0.1rem auto clamp(0.3rem, 0.8vh, 0.6rem) auto;
+    color: #1a1613;
+    line-height: 1.1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text {
+    font-family: var(--font-sans);
+    font-size: clamp(0.75rem, 0.85vw, 0.88rem);
+    font-weight: 200;
+    line-height: 1.45;
+    color: #333333;
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .about {
+      height: auto;
+      overflow: visible;
+    }
+    .about-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    .grid-box {
+      min-height: 300px;
+      border-bottom: 1px solid var(--border-color);
+    }
+  }
+</style>

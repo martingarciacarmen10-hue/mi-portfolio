@@ -1,0 +1,63 @@
+<footer id="contacto" class="footer">
+  <div class="footer-content">
+    <h2>¿HABLAMOS?</h2>
+    <p>Estoy disponible para nuevas oportunidades, proyectos y colaboraciones.</p>
+    <div class="contact-links">
+      <a href="mailto:tu-email@ejemplo.com" class="contact-btn">✉️ Enviar correo</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-btn">💼 LinkedIn</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-btn">💻 GitHub</a>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; {new Date().getFullYear()} Carmen Martín. Creado con Astro.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .contact-btn {
+    color: var(--text-light);
+    border: 1px solid var(--text-light);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+  }
+  .contact-btn:hover {
+    background-color: var(--text-light);
+    color: var(--bg-dark);
+  }
+  .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+</style>

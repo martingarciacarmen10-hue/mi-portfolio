@@ -1,0 +1,68 @@
+<header class="navbar">
+  <div class="logo">
+    <a href="#">C.M.G</a>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#inicio">INICIO</a>
+    <a href="#sobre-mi">SOBRE MI</a>
+    <a href="#estudios">ESTUDIOS</a>
+    <a href="#contacto">CONTACTO</a>
+  </nav>
+</header>
+
+<style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    z-index: 1000;
+
+    /* Fondo transparente suave con desenfoque de cristal */
+    background-color: rgba(252, 249, 242, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.1));
+  }
+
+  .logo a {
+    font-family: var(--font-handwriting, 'Alex Brush', cursive);
+    font-size: 2.2rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .logo a:hover {
+    color: #c1a166;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .nav-links a {
+    font-family: var(--font-sans, 'Montserrat', sans-serif);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  /* Cambio de color suave al tono dorado de tu imagen */
+  .nav-links a:hover {
+    color: #c1a166;
+  }
+</style>

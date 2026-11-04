@@ -1,43 +1,52 @@
-# Astro Starter Kit: Minimal
+# Mi Portfolio Personal - Carmen Martín
+¡Hola! Este es mi portfolio personal. Lo he desarrollado usando **Astro** para poner en práctica lo que voy aprendiendo y mostrar mis proyectos, mi trayectoria académica y cómo contactarme.
 
-```sh
-npm create astro@latest -- --template minimal
-```
+---
+# Tecnologías que he usado
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+--> **Astro** : El framework principal que he utilizado para construir la estructura y los componentes.
+--> **HTML5 y CSS3**: Para dar forma a las secciones y ajustar los estilos (colores, espacios, tipografías).
+--> **JavaScript**: Para algunos componentes.
+--> **Google font**: Usé las fuentes *Cormorant Garamond*, *Montserrat* y *Alex Brush* para los textos y títulos.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+# ¿Cómo he prganizado el proyecto?
+
+Para tener un código limpio y ordenado, he dividido la web en varios componentes dentro de la carpeta `src`:
 
 ```text
-/
+mi-portfolio/
 ├── public/
+│   ├── images/          # Mis fotos, iconos e ilustraciones
+│   ├── favicon.ico      # Icono de la pestaña del navegador
+│   └── favicon.svg      # Icono vectorial de la pestaña
 ├── src/
+│   ├── components/      # Componentes de la web:
+│   │   ├── Navbar.astro        # Menú de navegación superior
+│   │   ├── Hero.astro          # Sección principal de bienvenida
+│   │   ├── About.astro         # Conocimientos técnicos y habilidades personales
+│   │   ├── BannerDivider.astro # Divisor visual entre secciones
+│   │   ├── Education.astro     # Trayectoria académica e historia formativa
+│   │   └── Footer.astro        # Pie de página con datos de contacto y redes
+│   ├── layouts/
+│   │   └── Layout.astro # Plantilla base con el HTML general de la web
 │   └── pages/
-│       └── index.astro
-└── package.json
-```
+│       └── index.astro  # Página principal donde se unen todos los componentes
+├── .gitignore
+├── astro.config.mjs     # Configuración principal de Astro
+├── package.json         # Dependencias y scripts del proyecto
+├── package-lock.json
+├── README.md            # Documentación del proyecto
+└── tsconfig.json        # Configuración de TypeScript
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Comandos que he utilizado
 
-## 🧞 Commands
+--> node -v: Comprobar que tengo Node.js instalado.
+--> cd Documents: Entrar en la carpeta de Documentos, donde guardo mis proyectos.
+--> npm create astro@latest mi-portfolio: Crear la estructura básica del proyecto desde cero.
+--> cd mi-portfolio: Entrar en la carpeta del proyecto.
+--> npm run dev: Arrancar el servidor local para ver la web en tiempo real.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

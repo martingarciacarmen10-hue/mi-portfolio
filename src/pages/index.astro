@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import BannerDivider from '../components/BannerDivider.astro';
+import Education from '../components/Education.astro';
+import Footer from '../components/Footer.astro'; /* <-- 1. Añadir import aquí */
 ---
 
 <Layout title="Carmen Martín | Portfolio">
@@ -12,5 +14,7 @@ import BannerDivider from '../components/BannerDivider.astro';
     <Hero />
     <About />
     <BannerDivider />
+    <Education />
+    <Footer /> <!-- <-- 2. Añadir componente al final -->
   </main>
 </Layout>
